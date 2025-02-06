@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Central Mental Health Authority</title>
+    <style>
+        :root{
+            --darkRed:#b01f29;
+            --testGray:#8b9199;
+
+        }
+        ul.Header_marquee {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            background: #f5f5f5;
+            border-bottom: 3px solid var(--darkRed);
+            margin: 0;
+            padding: 0;
+        }
+        .Header_marquee li:nth-child(1) {
+            width: 88px;
+            background: var(--darkRed);
+            display: flex;
+            align-items: center;
+            color: var(--white);
+        }
+        .Header_marquee li:first-child::after {
+            position: absolute;
+            content: '';
+            left: 100%;
+            width: 0px;
+            height: 0px;
+            border-left: 8px solid var(--darkRed);
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+        .Header_marquee li:nth-child(2) {
+            width: calc(100% - 95px);
+        }
+        .Header_marquee li {
+            position: relative;
+            padding: 8px 10px;
+            height: 40px;
+            font-weight: 500;
+        }
+        .Header_marquee li span {
+            display: inline-block;
+            padding-right: 55px;
+        }
+        .logosection img{
+            max-height: 97px;
+            height: 100%;
+        }
+
+
+
+         .footer-section{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: #1A1E25;
+            color: #868c96;
+            padding: 50px 0 0;
+         }
+         .footer-section .copyright p{
+            font-size: 0.85rem;
+            line-height: 1.5;
+            padding-top: 10px;
+
+         }
+         footer h6{
+            font-size: 1.05rem;
+            font-weight: 600;
+            position: relative;
+            line-height: 1.5;
+            color:var(--green);
+            margin-bottom: 25px;
+         }
+         footer h6::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background:var(--green);
+            top:calc(100% + 5px );
+            left: 0;
+         }
+         ul.footerLink {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 20px 0;
+         }
+         ul.footerLink li {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 19px;
+            margin-bottom: 10px;            
+            transition: padding-left 0.3s ease;
+         }
+         ul.footerLink li:hover{
+            padding-left: 24px;
+            transition: all 0.3s;
+
+
+         }
+         ul.footerLink li::after{
+            content: ">";
+            color: var(--testGray);
+            font-weight: 400;
+            position: absolute;
+            left: 0px;
+            transition: all 0.3s ease;
+         }
+         ul.footerLink li:hover::after{
+            padding-left: 5px;
+            transition: all 0.3s ease;
+            color: var(--navbghover);
+         }
+         ul.footerLink li a{
+            font-size: 0.95rem;
+            color: var(--testGray);
+            transition: all 0.3s;
+         }
+         ul.footerLink li a:hover{
+            color: var(--navbghover);
+         }
+         .copyright{
+            padding: 10px 0 0 0;
+         }
+         .copyright p{
+            line-height: 1.3;
+         }
+
+         ul.logosection li:nth-child(1){
+            flex: 1 1 auto;
+         }
+         ul.logosection li:nth-child(2){
+            margin-right: 15px;
+         }
+
+         @media (max-width: 575.98px) { 
+
+          .logosection img {
+            max-height: 45px;
+            height: 100%;
+          }
+        }
+        @media (min-width: 1200px) {
+            .custom-tab {
+                height: 469px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    
+    <header class="bdr-top">
+      <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="logosection">
+                        <li>
+                            <img src="assets/images/logo.png" class="img-fluid">
+                        </li>
+                        
+                        <li>
+                            <!-- <span class="projectNmae">Central Mental Health Authority</span> -->
+                            <img src="assets/images/Ministry_of_Health_India.svg" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="assets/images/digital-india-logo.svg" class="img-fluid">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <ul class="Header_marquee">
+          <li>Update:</li>
+          <li>
+            <marquee style="color: #0d6efd;">
+              <span>Latest version of Central Mental Health Authority mobile application is available for download on
+                Google Play Store.</span>
+                <span>Latest Training Material Available For Download </span>
+                <span><a href="javascript:void();" target="_blank">Click Here To
+                  Download Central Mental Health Authority For Android</a> </span><span><a href="javascript:void();" target="_blank">Click Here To Download
+                    Central Mental Health Authority For IOS</a></span></marquee>
+          </li>
+        </ul>
+      </section>
+      <nav class="navbar navbar-expand-lg  nav-bg">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                  <li><a class="dropdown-item" href="whos-who.html">CMHA Members</a></li>                  
+                </ul>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="act-and-rules.html">Act & Rules</a>
+              </li>            
+             
+  
+              <li class="nav-item dropdown" id="myDropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  MHE  </a>
+                <ul class="dropdown-menu">                
+                  <li> <a class="dropdown-item" href="#"> CMHE(MHA) &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="application.html" >Application</a></li>
+                      <li><a class="dropdown-item" href="javascript:void();" >Establishment Registration</a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="dropdown-item" href="#"> SMHE </a></li>
+                  <li> <a class="dropdown-item" href="assets/Form D Central Mental Health Establishment.docx"> Form D </a></li>
+                  </ul>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="smha.html">SMHA</a>
+                </li>
+             
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SMHA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://haryanahealth.gov.in/scheme/haryana-state-mental-health-authority/" target="_blank">Haryana</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Andhra Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Arunachal Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Assam</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Bihar</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Chhattisgarh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Goa</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Gujarat</a></li> 
+                  <li><a class="dropdown-item" href="https://hpsmha.hp.gov.in/" target="_blank">Himachal Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Jharkhand</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Karnataka</a></li> 
+                  <li><a class="dropdown-item" href="http://www.ksmha.org/" target="_blank">Kerala</a></li>  
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Madhya Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Maharashtra</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Manipur</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Meghalaya</a></li> 
+                  <li><a class="dropdown-item" href="https://smha.mizoram.gov.in/" target="_blank">Mizoram</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Nagaland</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Odisha</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Punjab</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Rajasthan</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Sikkim</a></li> 
+                  <li><a class="dropdown-item" href="http://tnsmha.in/" target="_blank">Tamil Nadu</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Telangana</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Tripura</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttar Pradesh</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">Uttarakhand</a></li> 
+                  <li><a class="dropdown-item" href="javscript:void();" target="_blank">West Bengal</a></li>   
+                </ul>
+              </li>            -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="directory.html">Directory</a></li>
+                  <li><a class="dropdown-item active" href="location.html">Location</a></li>               
+                </ul>
+              </li>             
+            </ul>            
+          </div>
+        </div>
+      </nav>
+
+  
+      <div class="clearfix"></div>
+    <section class="Homebanner">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
+                
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Mann ki baat">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/banner.jpg" class="d-block w-100" alt="Ajadi Ka amrit">
+               
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>       
+    </section>
+
+    <main>
+
+      <section class=" w-100 py-5">
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-8">
+              <div class="row intro">
+                    
+                    
+                <!-- <div class="col-lg-3">
+                    <img src="assets/images/mind.svg" class="img-fluid mx-auto d-block">
+                </div> -->
+                <div class="col-lg-12">
+                    <h1 class="mainHeading">About Central Mental Health Authority</h1>
+                    <p class="homePara">The Central Mental Health Authority is an autonomous body established by the Indian government under the Mental Healthcare Act, 2017, to oversee and regulate mental health service provisions across the country. Its mission is to ensure quality mental healthcare, shape mental health policy regulations, and provide training to stakeholders. The CMHA is led by a Chairperson (Additional Secretary, MoHFW) and includes a diverse team of ex-officio and non-official members, including senior government officials, mental health professionals, directors of national institutes, and individuals with lived experiences of mental illness. It also operates a Secretariat managed by a CEO, responsible for administration, program implementation, and financial oversight. The CMHA advocates for mental health awareness, promotes quality care, and advocates the rights of individuals with mental healthcare needs. 
+                    </p>
+                 
+                </div>
+            
+            </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="custom-tab">
+                <div class="tabs">
+                  <input type="radio" name="tabs" id="tabone" checked="checked">
+                  <label for="tabone" class="tabname">What's New</label>
+                  <div class="tab">
+                    <ul class="event-icon">
+                      <li>
+                        <a href="javascript:void();">Coming soon</a>
+                      </li>                              
+                    </ul>
+                  </div>
+                  
+                  <!-- <input type="radio" name="tabs" id="tabtwo">
+                  <label for="tabtwo" class="secondTabs">Rules</label>
+                  <div class="tab">
+                    <h1>Upcomming Rules</h1>
+                  </div> -->
+                  
+                  <input type="radio" name="tabs" id="tabthree">
+                  <label for="tabthree" class="secondTabs">Photo Gallery</label>
+                  <div class="tab">
+                    <h5>Coming soon</h5>
+                  </div>
+                  
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- <section class=" w-100 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-5">
+                        <ul class="Ministry">
+                            <li>
+                                <div class="imgBox">
+                                    <figure>
+                                        <img src="assets/images/HFM-01.jpg" class="img-fluid mx-auto">
+                                        <div class="text-left">
+                                            <div class="name text-blue">Dr. Mansukh Mandaviya</div>
+                                            <div class="degination">
+                                                Hon’ble Cabinet Minister<div></div>
+                                                (Health and Family Welfare)
+                                            </div>
+                                            <a target="_blank" href="https://mansukhmandaviya.in/the-man/" class="btn btn-outline-primary btn-sm viewportfolio">View Portfolio</a>
+                                        </div>
+                                    </figure>
+                                </div>
+
+                            </li>
+                            
+                            <li>
+                                <div class="imgBox">
+                                    <figure>
+                                        <img src="assets/images/moshm-01.jpg" class="img-fluid mx-auto">
+                                        <figcaption>
+                                            <div class="name">Prof. S. P. Singh Baghel</div>
+                                            <div class="degination">
+                                              Hon’ble Minister of State<div></div>
+                                                (Health and Family Welfare)
+                                            </div>
+                                            <a target="_blank" href="https://sansad.in/ls/members/biography/31?from=members" class="btn btn-outline-primary btn-sm viewportfolio">View Portfolio</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgBox">
+                                    <figure>
+                                        <img src="assets/images/mos-01.jpg" class="img-fluid mx-auto">
+                                        <figcaption>
+                                            <div class="name">Dr. Bharati Pravin Pawar</div>
+                                            <div class="degination">
+                                              Hon’ble Minister of State<div></div>
+                                                (Health and Family Welfare)
+                                            </div>
+                                            <a target="_blank" href="https://sansad.in/ls/members/biography/5201?from=members" class="btn btn-outline-primary btn-sm viewportfolio">View Portfolio</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7">
+                      <div class="custom-tab">
+                        <div class="tabs">
+                          <input type="radio" name="tabs" id="tabone" checked="checked">
+                          <label for="tabone" class="tabname">What's New</label>
+                          <div class="tab">
+                            <ul class="event-icon">
+                              <li>
+                                <a href="javascript:void();">Upcomming</a>
+                              </li>                              
+                            </ul>
+                          </div>
+                          
+                          <!-- <input type="radio" name="tabs" id="tabtwo">
+                          <label for="tabtwo" class="secondTabs">Rules</label>
+                          <div class="tab">
+                            <h1>Upcomming Rules</h1>
+                          </div> -->
+                          
+                          <!-- <input type="radio" name="tabs" id="tabthree">
+                          <label for="tabthree" class="secondTabs">Photo Gallery</label>
+                          <div class="tab">
+                            <h1>Photo Gallery</h1>
+                          </div>
+                          
+                        </div>
+                      </div>                                     
+                    </div>
+                </div>
+            </div> -->
+        <!--</section> -->
+
+        <!-- <section class="">
+            <div class="container">
+                <div class="row pt-5">
+
+                    <div class="col-md-3">
+                        <a href="javascript:void();" >
+                            <div class="contentBox bg-one text-white">
+                                <img src="assets/images/one-01.svg" class="img-fluid mx-auto d-block">
+                                Guidelines & Training Materials
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="javascript:void();" >
+                        <div class="contentBox bg-two text-white">
+                            <img src="assets/images/two-02.svg" class="img-fluid mx-auto d-block">
+                            Sickle Cell Disease
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="javascript:void();" >
+                        <div class="contentBox bg-three text-white">
+                            <img src="assets/images/three-03.svg" class="img-fluid mx-auto d-block">
+                            Genetic Counselling
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="javascript:void();" >
+                        <div class="contentBox bg-four text-white">
+                            <img src="assets/images/four-04.svg" class="img-fluid mx-auto d-block">
+                            Dashboard
+                        </div>
+                    </a>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="introduction padd-25">
+            <div class="container">
+                <div class="row intro">
+                    
+                    
+                    <div class="col-lg-3">
+                        <img src="assets/images/mind.svg" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-lg-9">
+                        <h1 class="mainHeading">About mental health authority and who's who</h1>
+                        <p class="homePara">Central mental Health authority is set up under the Mental Health Care Act,2017 to advise the Central Government on all matters relating to mental healthcare and services. It performs the functions of  registering all mental health establishments under the control of the Central Government, and developing quality and service provision norms for them and supervising all such mental health establishments. It is also entrusted with training of all persons including law enforcement officials, mental health professionals and other health professionals about the provisions and implementation of this Act. 
+                        </p>
+                     
+                    </div>
+                
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!-- <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footerLogo">
+                        <li>
+                            <a href="">
+                                <img src="assets/images/NIC-logo.svg" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/Digital.svg" class="img-fluid">
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <article class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Website contents are being maintained by Ministry of Health and Family Welfare, Government of India.
+                            Website has been designed, developed, maintained and hosted by <a href="https://www.nic.in/" target="_blank">  National Informatics Centre (NIC) </a> </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer> -->
+
+
+     
+    <section class="footer-section">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>Contact Us</h6>
+                        <address>
+                            <strong>Ministry of Health & Family Welfare</strong><span class="d-block"></span>
+3rd Floor, Indian Red Cross Society,<span class="d-block"></span>
+New Delhi- 110001
+                        </address>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h6>Quick Link</h6>
+                        <ul class="footerLink">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">SMHA members</a></li>
+                            
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Important Link</h6>
+                        <ul class="footerLink">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Copyright Policy</a></li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </footer>
+        <article class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Website contents are being maintained by <a href="https://www.mohfw.gov.in/" target="_blank">Ministry of Health and Family Welfare, Government of India.</a>
+                            Website has been designed, developed, maintained and hosted by <a href="https://www.nic.in/" target="_blank">  National Informatics Centre (NIC) </a> </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+    </section>
+    <a id="button">
+        <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.21 19.29"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_1-2"><path class="cls-1" d="M2.5,19.29c-.64,0-1.28-.24-1.77-.73-.98-.98-.98-2.56,0-3.54L14.76,.99c1.32-1.32,3.63-1.32,4.95,0l13.76,13.76c.98,.98,.98,2.56,0,3.54-.98,.98-2.56,.98-3.54,0L17.24,5.59,4.27,18.55c-.49,.49-1.13,.73-1.77,.73Z"/></g></svg>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+
+
+$('.arrows').click(function () {
+      $(".contact_info_sec").toggleClass("moveclass", 1000);  
+});
+    </script>
+  </body>
+</html>
