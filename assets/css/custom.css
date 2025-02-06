@@ -46,6 +46,7 @@
     --green:#57c12a;
     --darkBlue:#0e2d7e;
     --lightblue:#13b9cc;
+    --lightgray:#eef1f6;
 
  }
 
@@ -955,13 +956,10 @@ ul.event-icon li::before{
 }
 .fancy-button {
   display: inline-block;
-
- 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.07em;
-  text-transform: capitalize;
-  line-height: 24px;
+  text-transform: capitalize; 
   color: #ffffff;
   position: relative;
 }
@@ -1635,6 +1633,8 @@ figcaption small{
   margin: 15px 0;
   padding: 10px 9px;
   font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--blue);
 }
 
 ul.prc-address{
@@ -1660,7 +1660,11 @@ ul.prc-address li{
 }
 
 
-
+.pdfDownload{
+  width: 100%;
+  padding: 35px 0 20px;
+  background-color: var(--lightgray);
+}
 
 
 
@@ -1749,8 +1753,4 @@ ul.prc-address li{
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
